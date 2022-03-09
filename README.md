@@ -1,1 +1,1 @@
-# SMA
+# Social Media App
