@@ -24,8 +24,51 @@
                 <input type="text" placeholder="Search">
             </div>
 
-            <div class="nav-user-icon online">
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                 <img src="/Images/profile-pic.png">
+            </div>
+        </div>
+
+        <!-------- settings-menu  -------->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="/Images/profile-pic.png">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="/Images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="/Images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="/Images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="/Images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="/Images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="/Images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="/Images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="/Images/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="/Images/arrow.png" width="10px"></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -96,15 +139,18 @@
                 </div>
             </div>
 
+            <!--------------- Post No 1 ---------------------->
             <div class="post-container">
-                <div class="user-profile">
-                    <img src="/Images/profile-pic.png">
-                    <div>
-                        <p>John Nicholson</p>
-                        <span>June 24 2022, 14:58 pm</span>
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/Images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 24 2022, 14:58 pm</span>
+                        </div>
                     </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
                 </div>
-
                 <p class="post-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ea facilis mollitia quasi, esse omnis recusandae aliquam voluptates laborum voluptate aspernatur</p>
 
                 <img src="/Images/feed-image-1.png" class="post-img">
@@ -116,11 +162,124 @@
                         <div><img src="/Images/share.png">20</div>
                     </div>
                     <div class="post-profile-icon">
-
+                        <img src="/Images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
                     </div>
                 </div>
             </div>
 
+            <!--------------- Post No 2 ---------------------->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/Images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 24 2022, 14:58 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Welcome to demo facebook. It is created by uing web technologies like html ans css</p>
+
+                <img src="/Images/feed-image-2.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/Images/like.png">120</div>
+                        <div><img src="/Images/comments.png">50</div>
+                        <div><img src="/Images/share.png">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/Images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------- Post No 3 ---------------------->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/Images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 24 2022, 14:58 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ea facilis mollitia quasi, esse omnis recusandae aliquam voluptates laborum voluptate aspernatur</p>
+
+                <img src="/Images/feed-image-3.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/Images/like-blue.png">120</div>
+                        <div><img src="/Images/comments.png">50</div>
+                        <div><img src="/Images/share.png">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/Images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------- Post No 4 ---------------------->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/Images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 24 2022, 14:58 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ea facilis mollitia quasi, esse omnis recusandae aliquam voluptates laborum voluptate aspernatur</p>
+
+                <img src="/Images/feed-image-4.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/Images/like.png">120</div>
+                        <div><img src="/Images/comments.png">50</div>
+                        <div><img src="/Images/share.png">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/Images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------- Post No 5 ---------------------->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/Images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 24 2022, 14:58 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ea facilis mollitia quasi, esse omnis recusandae aliquam voluptates laborum voluptate aspernatur</p>
+
+                <img src="/Images/feed-image-5.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/Images/like.png">120</div>
+                        <div><img src="/Images/comments.png">50</div>
+                        <div><img src="/Images/share.png">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/Images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn">Load More...</button>
         </div>
         <!-------- right sidebar -------->
         <div class="right-sideBar">
@@ -168,22 +327,30 @@
             <div class="online-list">
                 <div class="online">
                     <img src="/Images/member-1.png">
-                    <p>Alison Mina</p>
                 </div>
+                    <p>Alison Mina</p>
+                
             </div>
             <div class="online-list">
                 <div class="online">
                     <img src="/Images/member-2.png">
-                    <p>Jackson</p>
                 </div>
+                    <p>Jackson</p>
+                
             </div>
             <div class="online-list">
                 <div class="online">
                     <img src="/Images/member-3.png">
-                    <p>Hina Smith</p>
                 </div>
+                    <p>Hina Smith</p>
+                
             </div>
         </div>
     </div>
+
+    <div class="footer">
+        <p>Copyright</p>
+    </div>
+    <script src="/JavaScript/script.js"></script>
 </body>
 </html>
