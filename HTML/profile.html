@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="https://kit.fontawesome.com/1e72902d37.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="/Images/logo.png" class = "logo">
+            <ul>
+                <li><img src="/Images/notification.png"></li>
+                <li><img src="/Images/inbox.png"></li>
+                <li><img src="/Images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="/Images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="/Images/profile-pic.png">
+            </div>
+        </div>
+
+        <!-------- settings-menu  -------->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="/Images/profile-pic.png">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="/Images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="/Images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="/Images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="/Images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="/Images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="/Images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="/Images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="/Images/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="/Images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!---------------- profile page  ------------------------>
+
+    <div class="profile-container">
+        <img src="/Images/cover.png" class="cover-img">
+        <div class="profile-details">
+            <div class="profile-detail-left">
+                <div class="pd-row">
+                    <img src="/Images/profile.png" class="pd-image">
+                    <div>
+                        <h3>Jack Nicholson</h3>
+                        <p>120 Friends - 20 mutual</p>
+                        <img src="/Images/member-1.png">
+                        <img src="/Images/member-2.png">
+                        <img src="/Images/member-3.png">
+                        <img src="/Images/member-4.png">
+                    </div>
+                </div>
+            </div>
+            <div class="profile-detail-right"></div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>Copyright</p>
+    </div>
+    <script src="/JavaScript/script.js"></script>
+</body>
+</html>
